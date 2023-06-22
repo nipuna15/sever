@@ -68,14 +68,7 @@ app.get('/download/apk/:appId', async (req, res) => {
     const appDetails = await gplay.app({appId: appId});
     const downloadUrl = appDetails.url;
     const fileName = `${appId}.apk`;
-    const fileStream = fs.createWriteStream(fileName);
-    request(downloadUrl).pipe(fileStream);
-
-    
-    fileStream.on('finish', () => {
-      
-      res.sendFile(fileName);
-    });
+    res.sendFile(downloadUrl);
   } catch (error) {
     // Handle any errors
     res.status(500).send(error.message);
