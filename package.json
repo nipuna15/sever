@@ -1,5 +1,5 @@
 {
-  "name": "youtube2mp3",
+  "name": "sever",
   "version": "1.0.0",
   "description": "App that converts a youtube video to mp3",
   "main": "app.js",
@@ -7,12 +7,13 @@
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Miguel Nunez",
+  "author": "Nipuna Rangana",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "ejs": "^3.1.6",
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
     "express": "^4.17.1",
+    "google-play-scraper": "^9.1.1",
     "node-fetch": "^2.6.1",
     "request": "^2.88.2"
   },
