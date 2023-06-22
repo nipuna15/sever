@@ -13,6 +13,7 @@
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.17.1",
+    "fs": "^0.0.1-security",
     "google-play-scraper": "^9.1.1",
     "node-fetch": "^2.6.1",
     "request": "^2.88.2"
